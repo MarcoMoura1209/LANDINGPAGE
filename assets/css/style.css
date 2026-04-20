@@ -60,10 +60,10 @@ nav ul {
 }
 
 nav ul li {
-    padding: 0.93rem 1.25rem;
+    padding: 0rem 1.25rem;
 }
 
-.nav-primario {
+.nav-principal {
     text-decoration: none;
     color: var(--azul-acinzentado);
     font-family: var(--JetBrains-mono);
