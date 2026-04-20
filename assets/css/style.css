@@ -160,6 +160,7 @@ p {
     width: 1.5rem;
     color: var(--azul-noite-escuro);
     border-radius: 5%;
+    transition-duration: .3s;
 }
 
 #botoes-sobre .contato{
@@ -174,4 +175,8 @@ p {
 #botoes-sobre .contato:hover {
     color: var(--azul-muito-claro);
     border: 0.07rem solid var(--azul-muito-claro);
+}
+
+#botoes-sobre .ver-projeto:hover {
+    background-color: var(--azul-muito-claro);
 }
