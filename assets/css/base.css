@@ -32,3 +32,23 @@ p {
 header, section, footer {
     padding: 0% 5%;
 }
+
+.texto-azul-claro {
+    color: var(--azul-claro);
+}
+
+.texto-azul-cinza {
+    color: var(--azul-cinza);
+}
+
+.texto-azul-petroleo-escuro {
+    color: var(--texto-azul-petroleo-escuro);
+}
+
+.texto-azul-medio {
+    color: var(--texto-azul-medio);
+}
+
+.texto-verde-esmeralda{
+    color: var(--texto-verde-esmeralda);
+}
