@@ -1,0 +1,46 @@
+.titulo-muito-pequeno {
+    font-size: .875rem;
+    letter-spacing: .05em;
+    font-family: var(--JetBrains-mono);
+    color: var(--azul-claro);
+}
+
+.titulo-principal {
+    font-size: 6rem;
+    line-height: 1;
+    font-family: var(--Inter);
+    font-weight: 900;
+    margin: 2rem 0rem;
+    margin-bottom: 3rem;
+    color: var(--azul-muito-claro);
+}
+
+.subtitulo {
+    font-size: 3rem;
+    line-height: 1;
+    letter-spacing: -.05em;
+    font-weight: 600;
+    font-family: var(--Inter);
+    margin: 2rem 0rem;
+    color: var(--branco);
+}
+
+.texto-azul-claro {
+    color: var(--azul-claro);
+}
+
+.texto-azul-cinza {
+    color: var(--azul-cinza);
+}
+
+.texto-azul-petroleo-escuro {
+    color: var(--texto-azul-petroleo-escuro);
+}
+
+.texto-azul-medio {
+    color: var(--texto-azul-medio);
+}
+
+.texto-verde-esmeralda{
+    color: var(--texto-verde-esmeralda);
+}
