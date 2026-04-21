@@ -1,6 +1,11 @@
 
 /* ========  SOBRE  ======== */
 
+#Sobre {
+    margin: 3rem 0rem;
+    height: 90vh;
+}
+
 #codigo-sobre {
     font-size: 1rem;
     line-height: 1.75rem;
@@ -22,8 +27,8 @@
     padding: 1rem 1.2rem;
 }
 
+/* ========  PROJETOS  ======== */
 
-#Sobre {
-    margin: 3rem 0rem;
-    height: 100vh;
+#Projetos {
+    height: 95vh;
 }
