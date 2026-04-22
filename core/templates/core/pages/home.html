@@ -12,6 +12,8 @@
     <meta property="og:description" content="Desenvolvedor web júnior especializado em Python e Django.">
     <meta property="og:type" content="website">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>MouraWeb</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
@@ -71,7 +73,8 @@
 
             {% empty %}
 
-
+                <h>Não foi possivel achar nenhum projeto 😢</h>
+                <p>Fique a vontade para navegar pelo resto do site!</p>
 
             {% endfor %}
         </section>

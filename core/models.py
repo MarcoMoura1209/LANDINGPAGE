@@ -19,7 +19,7 @@ class Projeto(models.Model):
     link_github = models.URLField()
     imagem = models.ImageField(upload_to='projetos/')
     tecnologias = models.ManyToManyField(Tecnologias)
-    ordem = models.PositiveIntegerField(default=0)  # para ordenar os cards
+    ordem = models.PositiveIntegerField(default=0)
 
     class Meta:
         ordering = ['ordem']
