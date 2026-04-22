@@ -1,0 +1,32 @@
+
+    <div class="projeto">
+        <div class="projeto-imagem">
+            <img src="{{ projeto.imagem.url }}" alt="imagem do projeto">
+        </div>
+        <div class="projeto-conteudo">
+            <h3 class="titulo-muito-pequeno projeto-titulo">
+                {{ projeto.titulo }}
+            </h3>
+        
+            <p class="projeto-descricao">
+                {{ projeto.descricao }}
+            </p>
+        </div>
+        <div class="projeto-tecnologias">
+            {% for tecnologia in projeto.tecnologias.all %}
+        
+                <span class="badge">
+                    {{ tecnologia.nome }}
+                </span>
+        
+            {% endfor %}
+        </div>
+        <div class="projeto-links">
+            <a href="{{ projeto.link_github }}" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                código
+            </a>
+        </div>
+    </div>
+
+
