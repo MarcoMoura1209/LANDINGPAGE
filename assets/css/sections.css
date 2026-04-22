@@ -35,3 +35,18 @@
     height: 95vh;
     scroll-margin-top: 5rem;
 }
+
+.container-projetos {
+    display: grid;
+    max-width: 24.37rem;
+    background-color: var(--azul-ardosia-escuro);
+    border-radius: .5rem;
+    border: 0.1rem solid var(--azul-cinza);
+    margin: 3rem 0rem;
+    transition: transform 0.3s ease; 
+}
+
+.container-projetos:hover {
+    border: 0.1rem solid var(--azul-claro);
+    transform: scale(1.02); 
+}
