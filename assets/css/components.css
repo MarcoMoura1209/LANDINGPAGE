@@ -85,3 +85,12 @@ nav ul li {
     color: var(--azul-muito-claro);
     border: 0.07rem solid var(--azul-muito-claro);
 }
+
+.badge {
+    padding: .3rem .6rem;
+    color: var(--azul-acinzentado);
+    background-color: var(--azul-ardosia-escuro);
+    border-radius: .5rem;
+    font-family: var(--JetBrains-mono);
+    font-size: .8rem;
+}

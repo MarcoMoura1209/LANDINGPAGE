@@ -67,16 +67,18 @@
             <h2 class="titulo">Projetos</h2>
             <p>Cada projeto é uma demonstração prática do ecossistema Django, do ORM ao deploy.</p>
 
-            {% for projeto in projetos %}
+            <div class="container-projetos">
+                {% for projeto in projetos %}
 
-                {% include "core/partials/projeto.html" %}
+                    {% include "core/partials/projeto.html" %}
 
-            {% empty %}
+                {% empty %}
 
-                <h>Não foi possivel achar nenhum projeto 😢</h>
-                <p>Fique a vontade para navegar pelo resto do site!</p>
+                    <h>Não foi possivel achar nenhum projeto 😢</h>
+                    <p>Fique a vontade para navegar pelo resto do site!</p>
 
-            {% endfor %}
+                {% endfor %}
+            </div>
         </section>
     </main>
 </body>
