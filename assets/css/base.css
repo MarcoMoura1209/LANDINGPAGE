@@ -10,6 +10,8 @@
     --azul-ardosia-escuro: #2c3544;
     --texto-verde-esmeralda: #2c7d55;
     --azul-marinho-escuro: #19273e;
+    --vermelho: #96343d;
+    --amarelo: #937619;
     
     --JetBrains-mono: 'JetBrains Mono', monospace;
     --Inter: 'Inter', sans-serif;
@@ -62,3 +64,8 @@ header, section, footer {
 .texto-verde-esmeralda{
     color: var(--texto-verde-esmeralda);
 }
+
+.texto-branco {
+    color: var(--branco);
+}
+

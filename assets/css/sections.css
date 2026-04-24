@@ -206,3 +206,36 @@
     border-radius: 9999px;
     height: .5rem;
 }
+
+
+/* ========  CONTATO  ======== */
+
+
+#Contato {
+    min-height: 90vh;
+}
+
+.container-codigo-contato {
+    background-color: var(--azul-marinho-escuro);
+    border: 0.1rem solid var(--azul-ardosia-escuro);
+    border-radius: .375rem;
+    padding: 1.5rem;
+    margin: 1.5rem 0rem;
+}
+
+.conatiner-points .point-vermelho {
+    color: var(--vermelho);
+}
+
+.conatiner-points .point-amarelo {
+    color: var(--amarelo);
+}
+
+.conatiner-points .point-verde {
+    color: var(--texto-verde-esmeralda);
+}
+
+.container-codigo p, span {
+    font-family: var(--JetBrains-mono);
+    font-size: .9rem;
+}

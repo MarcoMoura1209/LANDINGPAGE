@@ -45,6 +45,7 @@
 
     </header>
 
+
     <main>
         <section id="Sobre">
             <div class="conteudo-sobre">
@@ -72,6 +73,7 @@
 
         </section>
 
+
         <section id="Projetos">
             <p class="titulo-muito-pequeno"># models.Portfolio.objects.all()</p>
             <h2 class="titulo">Projetos</h2>
@@ -91,6 +93,7 @@
             </div>
         </section>
 
+
         <section id="Stack">
             <p class="titulo-muito-pequeno">
                 # inspect(developer.skills)
@@ -106,7 +109,7 @@
 
                     <div class="skill">
                         <div class="skill-nome-badge">
-                             <i class="fa-solid fa-circle fa-2xs"></i>
+                            <i class="fa-solid fa-circle fa-2xs"></i>
                             <span>
                                 {{ skill.nome }}
                             </span>
@@ -145,6 +148,45 @@
 
                 </div>
 
+            </div>
+        </section>
+
+
+        <section id="Contato">
+            <div class="contato-texto">
+                <p class="titulo-muito-pequeno"># POST /api/v1/message/send</p>
+                <h2 class="titulo">Contato</h2>
+                <p>Interessado em trabalhar juntos? Envie uma requisição, respondo em até 12h.</p>
+                <div class="container-codigo-contato">
+
+                    <div class="conatiner-points">
+                        <i class="fa-solid fa-circle fa-2xs point-vermelho"></i>
+                        <i class="fa-solid fa-circle fa-2xs point-amarelo"></i>
+                        <i class="fa-solid fa-circle fa-2xs point-verde"></i>
+                    </div>
+                    <div class="container-codigo">
+                        <p><span class="texto-azul-claro">$</span> curl developer.info</p>
+                        <p>{</p>
+                        <p>"nome": <span class="texto-branco">"Marco Moura"</span>,</p>
+                        <p>"localização": <span class="texto-branco">"Brasil"</span>,</p>
+                        <p>"disponibilidade": <span class="texto-verde-esmeralda">"aberto a oportunidades"</span>,</p>
+                        <p>"preferência": <span class="texto-branco">"remoto / híbrido"</span></p>
+                        <p>}</p>
+                    </div>
+
+                </div>
+
+                <div id="botoes-contato">
+                    <a href="" class="btn-secundario">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="" class="btn-secundario">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="" class="btn-secundario">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
