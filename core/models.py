@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class Tecnologias(models.Model):
+class Tecnologia(models.Model):
     nome = models.CharField(max_length=50)
 
     def __str__(self):
@@ -14,11 +14,11 @@ class Tecnologias(models.Model):
         verbose_name_plural = 'Tecnologias'
 
 class Projeto(models.Model):
-    titulo = models.TextField()
-    descricao = models.CharField(max_length=165)
+    titulo = models.CharField(max_length=50)
+    descricao = models.TextField()
     link_github = models.URLField()
     imagem = models.ImageField(upload_to='projetos/')
-    tecnologias = models.ManyToManyField(Tecnologias)
+    tecnologias = models.ManyToManyField(Tecnologia)
     ordem = models.PositiveIntegerField(default=0)
 
     class Meta:
@@ -30,7 +30,7 @@ class Projeto(models.Model):
         return self.titulo
 
 
-class Skills(models.Model):
+class Skill(models.Model):
     nome = models.CharField(max_length=50)
     porcentagem = models.PositiveIntegerField(default=0)
     
