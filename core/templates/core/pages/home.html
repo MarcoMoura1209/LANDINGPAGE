@@ -196,15 +196,15 @@
                     {% csrf_token %}
                     <div class="formulario">
                         <p>
-                            <label for="id_nome">nome</label>
+                            <label for="id_nome">nome <span class="texto-azul-claro">*</span></label>
                             {{ form.nome }}
                         </p>
                         <p>
-                            <label for="id_email">email</label>
+                            <label for="id_email">email <span class="texto-azul-claro">*</span></label>
                             {{ form.email }}
                         </p>
                         <p>
-                            <label for="id_mensagem">mensagem</label>
+                            <label for="id_mensagem">mensagem <span class="texto-azul-claro">*</span></label>
                             {{ form.mensagem }}
                         </p>
                     </div>

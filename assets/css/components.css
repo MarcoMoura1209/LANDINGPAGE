@@ -137,6 +137,12 @@ form {
     color: var(--branco);
     margin-bottom: 2rem;
     width: 100%;
+    transition: .3s;
+}
+
+.campo:focus {
+    border: 0.07rem solid var(--azul-muito-claro);
+    outline: none;
 }
 
 .botao-form {

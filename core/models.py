@@ -33,7 +33,7 @@ class Projeto(models.Model):
 class Skill(models.Model):
     nome = models.CharField(max_length=50)
     porcentagem = models.PositiveIntegerField(default=0)
-    
+
     class Meta:
         verbose_name = 'Skill'
         verbose_name_plural = 'Skills'
@@ -46,11 +46,11 @@ class Skill(models.Model):
 class Cliente(models.Model):
     nome = models.CharField(max_length=30)
     email = models.EmailField()
-    mensagem = models.TextField()
+    mensagem = models.TextField(blank=False, null=False)
 
     class Meta: 
         verbose_name = 'Cliente'
-        verbose_name_plural = 'CLientes'
+        verbose_name_plural = 'Clientes'
 
 
     def __str__(self):
