@@ -45,6 +45,11 @@ header, section, footer {
     padding: 0% 5%;
 }
 
+label {
+    font-family: var(--JetBrains-mono);
+    font-size: .9rem;
+}
+
 .texto-azul-claro {
     color: var(--azul-claro);
 }

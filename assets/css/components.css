@@ -125,6 +125,10 @@ form {
     max-width: none;
 }
 
+.formulario p label::after {
+    content: none !important;
+}
+
 .campo {
     background-color: var(--azul-marinho-escuro);
     border-radius: .375rem;

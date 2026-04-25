@@ -15,12 +15,14 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Marco Moura — Desenvolvedor web júnior em Python e Django">
-    
+
 
     <!-- Adicionar após o deploy -->
     <!-- <meta property="og:url" content="https://www.meusite.com.br/"> -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="canonical" href="/">
 
@@ -82,12 +84,12 @@
             <div class="container-projetos">
                 {% for projeto in projetos %}
 
-                    {% include "core/partials/projeto.html" %}
+                {% include "core/partials/projeto.html" %}
 
                 {% empty %}
 
-                    <h3>Não foi possivel achar nenhum projeto 😢</h3>
-                    <p>Fique a vontade para navegar pelo resto do site!</p>
+                <h3>Não foi possivel achar nenhum projeto 😢</h3>
+                <p>Fique a vontade para navegar pelo resto do site!</p>
 
                 {% endfor %}
             </div>
@@ -121,15 +123,15 @@
                     </div>
 
                     {% empty %}
-                        <h3>Não foi possivel achar nenhuma skill 😢</h3>
-                        <p>Fique a vontade para navegar pelo resto do site!</p>
+                    <h3>Não foi possivel achar nenhuma skill 😢</h3>
+                    <p>Fique a vontade para navegar pelo resto do site!</p>
                     {% endfor %}
 
                 </div>
 
                 <div class="container-skills-barra">
                     {% for skill in skills %}
-                    
+
                     <div class="container-barra">
                         <div class="texto-barra">
                             <span class="skill-nome"> {{skill.nome}} </span>
@@ -142,8 +144,8 @@
                     </div>
 
                     {% empty %}
-                        <h3>Não foi possivel achar nenhuma skill 😢</h3>
-                        <p>Fique a vontade para navegar pelo resto do site!</p>
+                    <h3>Não foi possivel achar nenhuma skill 😢</h3>
+                    <p>Fique a vontade para navegar pelo resto do site!</p>
                     {% endfor %}
 
                 </div>
@@ -192,7 +194,20 @@
             <div class="container-form">
                 <form method="post">
                     {% csrf_token %}
-                    <div class="formulario">{{ form.as_p }}</div>
+                    <div class="formulario">
+                        <p>
+                            <label for="id_nome">nome</label>
+                            {{ form.nome }}
+                        </p>
+                        <p>
+                            <label for="id_email">email</label>
+                            {{ form.email }}
+                        </p>
+                        <p>
+                            <label for="id_mensagem">mensagem</label>
+                            {{ form.mensagem }}
+                        </p>
+                    </div>
                     <button class="btn-primario botao-form" type="submit">
                         <i class="fa-regular fa-paper-plane"></i>
                         POST /message/send
@@ -205,7 +220,8 @@
     </main>
 
     <footer>
-        <p><span class="texto-azul-claro">&copy;</span> 2026 <span class="texto-branco">MouraWeb</span> — Marco Moura — Desenvolvido com Python & Django</p>
+        <p><span class="texto-azul-claro">&copy;</span> 2026 <span class="texto-branco">MouraWeb</span> — Marco Moura —
+            Desenvolvido com Python & Django</p>
         <p># return HttpResponse(status=200)</p>
     </footer>
 
