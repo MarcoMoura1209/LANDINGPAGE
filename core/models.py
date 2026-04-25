@@ -38,5 +38,20 @@ class Skill(models.Model):
         verbose_name = 'Skill'
         verbose_name_plural = 'Skills'
 
+
+    def __str__(self):
+        return self.nome
+
+
+class Cliente(models.Model):
+    nome = models.CharField(max_length=30)
+    email = models.EmailField()
+    mensagem = models.TextField()
+
+    class Meta: 
+        verbose_name = 'Cliente'
+        verbose_name_plural = 'CLientes'
+
+
     def __str__(self):
         return self.nome
