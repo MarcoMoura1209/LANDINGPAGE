@@ -113,3 +113,38 @@ nav ul li {
 .fa-circle {
     color: var(--azul-muito-claro);
 }
+
+form {
+    width: 100%;
+}
+
+.formulario p{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: none;
+}
+
+.campo {
+    background-color: var(--azul-marinho-escuro);
+    border-radius: .375rem;
+    border: 0.07rem solid var(--azul-ardosia-escuro);
+    padding: .5rem;
+    color: var(--branco);
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.botao-form {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--azul-muito-claro);
+}
+
+.botao-form:hover {
+    transform: scale(1.02);
+}
+
+.campo-email, .campo-nome, .campo-mensagem{
+    width: 100%;
+}

@@ -130,11 +130,11 @@
     margin: 3rem 0rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .container-skills-badge {
-    width: 45%;
+    width: 48%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -175,7 +175,7 @@
 }
 
 .container-skills-barra {
-    width: 45%;
+    width: 48%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -215,7 +215,8 @@
     min-height: 90vh;
     scroll-margin-top: 5rem;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 
 .container-codigo-contato {
@@ -226,19 +227,19 @@
     margin: 1.5rem 0rem;
 }
 
-.conatiner-points .point-vermelho {
+.container-points .point-vermelho {
     color: var(--vermelho);
 }
 
-.conatiner-points .point-amarelo {
+.container-points .point-amarelo {
     color: var(--amarelo);
 }
 
-.conatiner-points .point-verde {
+.container-points .point-verde {
     color: var(--texto-verde-esmeralda);
 }
 
-.container-codigo p, span {
+.container-codigo p, .container-codigo span {
     font-family: var(--JetBrains-mono);
     font-size: .9rem;
 }
@@ -260,4 +261,12 @@
 #botoes-contato a:hover {
     color: var(--azul-muito-claro);
     border: 0.1rem solid var(--azul-muito-claro);
+}
+
+.contato-texto {
+    width: 48%;
+}
+
+.container-form {
+    width: 48%;
 }

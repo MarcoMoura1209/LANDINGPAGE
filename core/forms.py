@@ -9,14 +9,14 @@ class Form(forms.ModelForm):
         fields = '__all__'
         widgets = {
             'nome': forms.TextInput(attrs={
-                'class': 'campo-nome',
+                'class': 'campo-nome campo',
                 'placeholder': 'Seu nome'}),
 
             'email': forms.EmailInput(attrs={
-                'class': 'campo-email',
+                'class': 'campo-email campo',
                 'placeholder': 'seu@email.com'}),
 
             'mensagem': forms.Textarea(attrs={
-                'class': 'campo-mensagem',
+                'class': 'campo-mensagem campo',
                 'placeholder': 'Descreva o que você tem em mente...'})
         }

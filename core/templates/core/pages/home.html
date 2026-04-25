@@ -159,7 +159,7 @@
                 <p>Interessado em trabalhar juntos? Envie uma requisição, respondo em até 12h.</p>
                 <div class="container-codigo-contato">
 
-                    <div class="conatiner-points">
+                    <div class="container-points">
                         <i class="fa-solid fa-circle fa-2xs point-vermelho"></i>
                         <i class="fa-solid fa-circle fa-2xs point-amarelo"></i>
                         <i class="fa-solid fa-circle fa-2xs point-verde"></i>
@@ -192,8 +192,11 @@
             <div class="container-form">
                 <form method="post">
                     {% csrf_token %}
-                    {{ form.as_p }}
-                    <button type="submit">Salvar</button>
+                    <div class="formulario">{{ form.as_p }}</div>
+                    <button class="btn-primario botao-form" type="submit">
+                        <i class="fa-regular fa-paper-plane"></i>
+                        POST /message/send
+                    </button>
                 </form>
             </div>
 
