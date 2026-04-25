@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+    .titulo-principal{
+        font-size: 4rem;
+    }
+
+    .titulo {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-principal{
+        font-size: 2.8rem;
+    }
+
+    .titulo{
+        font-size: 1.8rem;
+    }
+}
